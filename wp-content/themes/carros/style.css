@@ -1,0 +1,399 @@
+/* 	Theme Name: Meu Primeiro Tema 
+	Theme URI: http://www.marcianodias.com.br/ 
+	Description: Tema criado no tutorial para o Oficina da Net 
+	Version: 1.0 
+	Author: Marciano Dias 
+*/
+
+
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+	background:#e6e6e6;
+}
+
+
+
+a {
+	color:#ed1c24;
+}
+
+
+body header {
+	position:fixed;
+	width:96%;
+	height:170px;
+	top:0;
+	left:0;
+	margin-top:0;
+	padding-top:20px;
+	margin-left:2%;
+	z-index:999;
+	background:#e6e6e6;
+}
+			nav {
+				width:100%;
+			}
+
+
+			ul.topo-items {
+				text-align:center;
+				position:relative;
+				list-style:none;
+				display:inline-block;
+				height:80px;
+				width:100%;
+				margin-left:0;
+				float:right;
+				background:#ed1c24;
+			}
+
+			ul.topo-items > li, ul.topo-items > li a {
+				display: block;
+				height:100%;
+				
+				font-family:Dosis;
+				font-size:13px;
+				font-weight:bold;
+				color:white;
+			
+				float:left; /* cada li estará alinhado a direita */
+				display: flex; /* Cada item é um flex container */
+				align-items: center; /* Os itens dentro flex container são alinhados ao centro */
+				padding:10px;
+			}
+			
+			ul.topo-items > li:nth-child(n+3):hover {
+				background-color:#242424;
+				overflow:hidden;
+			}
+
+			
+
+			ul.topo-items > li:first-child {
+				display:block;
+				padding-left:20px;
+				width:260px;
+				height:80px;
+				float:left;
+				display: flex; /* Cada item é um flex container */
+				align-items: center; /* Os itens dentro flex container são alinhados ao centro */
+			}			
+			
+			ul.topo-items > li:first-child img {
+				overflow: visible;
+			}
+			
+			ul.topo-items > li div {
+				display: inline-block;
+			
+				position: absolute;
+				width: 100%;
+				top: 80px;
+				left: 0;
+				z-index:95;
+				height:auto;
+			 
+				opacity: 0;
+				visibility: hidden;
+				overflow: hidden;
+			 
+				background: #242424;
+				border-bottom: 1px solid #ed1c24;
+
+				-webkit-transition: all .3s ease .15s;
+				-moz-transition: all .3s ease .15s;
+				-o-transition: all .3s ease .15s;
+				-ms-transition: all .3s ease .15s;
+				transition: all .3s ease .15s;
+			}
+			
+			ul.topo-items > li div ul {
+				width:100%;
+				height:100%;
+				
+				display:inline-block;
+			}
+			
+			ul.topo-items > li div ul li {
+				float:left;
+				width:16%;
+				font-family:Dosis;
+				font-size:15px;
+				height:auto;
+				font-weight:bold;
+				display:inline-block;
+				text-align:center;
+				vertical-align: middle;
+				padding:12px;
+				color:#f0f0f0;
+			}
+			
+			ul.topo-items > li div ul li:first-child {			
+				height:200px;
+				display:block;
+				/*background:#474747;*/
+			}
+			
+			ul.topo-items > li div ul li:first-child span {
+				background:#474747;
+				padding:30px;
+				padding-top:5px;
+				padding-bottom:5px;
+			}
+
+			
+			
+			ul.topo-items li:hover div {
+				opacity: 1;
+				visibility: visible;
+				overflow: visible;
+			}
+
+			ul.topo-items li.social {
+				margin:0;
+				padding:0;
+			}
+			
+			ul.topo-items li.social ul {
+				list-style:none;
+				height:100%;
+				visibility:hidden;
+			}
+			
+			ul.topo-items li.social ul li {
+				display:inline-block;
+				float:left;
+				width:auto;
+				height:100%;
+				margin:0;
+				display: flex; /* Cada item é um flex container */
+				align-items: center; /* Os itens dentro flex container são alinhados ao centro */				
+			}
+
+
+
+div.principal {
+	position:relative;
+	width:96%;
+	margin-left:2%;
+	margin-bottom:20px;
+	overflow:hidden;	
+}
+
+	.figura-principal {
+		width:46%;
+		float:left;		
+	}
+	
+	.figura-secundaria {
+		width:27%;
+		float:left;			
+	}
+
+/*
+	div.figura-princial {
+		
+		position:relative;
+		width:609px;
+		height:498px;
+		float:left;
+		display:block;
+	}
+
+	div.figura-secundaria {
+		position:relative;
+		display:block;
+		width:356px;
+		height:249px;
+		float:left;
+	}
+	
+	*/
+
+
+
+nav.links-extras {
+	margin-left:2%;
+	margin-top:50px;
+	width:96%;
+	height:340px;
+	font-family:Dosis;
+	font-weight:bold;
+}
+nav.links-extras figure {
+	width:25%;
+	height:340px;
+	float:left;
+}
+
+nav.links-extras figure img {
+	width:94%;
+	margin-left:3%;
+}
+
+
+.fig1 {
+	background-image:url(fig1.jpg);
+}
+.fig2 {
+	background-image:url(fig2.jpg);
+}
+.fig3 {
+	background-image:url(fig3.jpg);
+}
+.fig4 {
+	background-image:url(fig4.jpg);
+}
+.fig5 {
+	background-image:url(fig5.jpg);
+}
+
+
+nav.acessados {
+	position:relative;
+	height:26px;
+	width:96%;
+	margin-left:2%;	
+	margin-top:207px;
+	background-image: url(acessados.png);
+	background-color:#242424;
+    background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+nav.acessados ul {
+	margin-left:160px;
+	margin-top:0;
+	height:26px;
+}
+
+nav.acessados ul li {
+	float:left;
+	color:#e2e2e2;
+
+	font-family:Dosis;
+	font-size:10px;
+	font-weight:bold;
+
+	display:block;
+	margin-left:25px;
+	margin-top:0px;
+	margin-right:25px;
+	
+	width:auto;
+	height:26px;
+	
+	
+	display: flex; /* Cada item é um flex container */
+	align-items: center; /* Os itens dentro flex container são alinhados ao centro */
+}
+
+
+
+			
+			/*
+			ul.topo-items li ul {
+				width:1320px;
+				height:160px;
+				background:#242424;
+				border-bottom:1px solid #ed1c24;
+				display:none;
+				position:absolute;
+				z-index:99;
+			}
+			
+			ul.topo-items li:hover ul, ul.topo-items li.over ul{display:block;}
+			
+			ul.topo-items li ul li ul {
+				display:none;
+			}*/
+			
+			
+			
+			
+			
+			
+			div.topo-procurar {
+				position:relative;
+				width:20%;
+				float:right;
+				padding-left:20px;
+				padding-right:100px;
+				height:80px;
+				display: flex; /* Cada item é um flex container */
+				align-items: center; /* Os itens dentro flex container são alinhados ao centro */
+			}
+
+
+			.form-procurar {
+				width:130px;
+				height:32px;
+				padding:12px;
+			}
+
+			/* enable absolute positioning */
+			.inner-addon { 
+				position: relative; 
+			}
+
+			/* style icon */
+			.inner-addon .glyphicon {
+			  position: absolute;
+			  padding: 10px
+			  pointer-events: none;
+			  color:#a3a3a3;
+			}
+
+			/* align icon */
+			.left-addon .glyphicon  { left:  0px;}
+			.right-addon .glyphicon { right: 0px;}
+
+			/* add padding  */
+			.left-addon input  { padding-left:  30px; }
+			.right-addon input { padding-right: 30px; }
+			
+			
+@media screen and (max-width: 400px) {
+	.principal,.links-extras,.acessados {
+		display:none;
+	}
+
+    body header {
+		display:block;
+	}
+	
+	body header nav {
+		min-height:100px;
+	}
+	
+	body header nav ul li {
+		background:#d41f1f;
+		border-top:1px solid #c21c1c;
+		width:100%;
+		height:47px;
+		
+		font-size:32px;
+		
+	}
+	
+	ul.topo-items li:hover div {
+		opacity: 0;
+	}
